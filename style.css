@@ -1,0 +1,378 @@
+
+
+/*
+overflow-y: hidden;
+*/
+
+*{
+    color:white;
+    padding: 0; margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 0%;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+body{
+    border-radius: 0%;
+    background-color: black;
+}
+
+
+.grid-container {
+    display:grid;
+    
+    grid-template-areas:
+    'menu menu menu'
+    'content content content'
+    'projectPrev projectPrev projectPrev'
+    'resumeplug resumeplug resumeplug'
+    
+}
+
+    
+
+.menuMan{
+    grid-area: menu;
+    width:100vw;
+    height: 2em;
+    display: grid;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    position: fixed;
+    
+    
+
+
+}
+#menuli{
+    border-radius: 0%;
+    display: grid;
+    list-style: none;
+    display:inline;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    vertical-align: middle;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menuli li{
+    list-style: none;
+    display:inline;
+    margin: 0;
+    overflow: hidden;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    text-align: center;
+    text-align: center;
+    border-radius: 0%;
+    vertical-align:middle;
+    font-size: 1.3rem;
+ 
+    
+}
+#orange :hover{
+ 
+    transition: 0.4s;
+    padding: 10px;
+    border-radius: 10%;
+    text-decoration: underline;
+    text-decoration-color: #d9ad0f;
+
+}
+
+#green :hover{
+    transition: 0.4s;
+    padding: 10px;
+    border-radius: 10%;
+    text-decoration: underline;
+    text-decoration-color: #00af3a;
+
+}
+#pink :hover{
+    transition: 0.4s;
+    padding: 10px;
+    border-radius: 10%;
+    text-decoration: underline;
+    text-decoration-color: #af005a;
+
+}
+#white{background-color: aliceblue;}
+
+.contents{
+    justify-items: center;
+    grid-area: content;
+    background-image: url(cool\ gif.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100vw;
+    height: 100vh;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.contents h1{
+    margin-top: 1em;
+    font-size:10rem;
+    justify-items: center;
+}
+
+.contents h3{
+    font-size: 3rem;
+    justify-items: center;
+
+}
+
+#animateo
+{
+    display:flexbox;
+   text-align: center;
+
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    
+    #8a44d5 0%,
+    #0eda14 39%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 20s linear infinite;
+  
+}
+#animateo2
+{
+    display:flexbox;
+   text-align: center;
+
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    
+    #ba0202 0%,
+    #b1198b 39%,
+    #245cf6 67%,
+    #00d13b 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+  
+}
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* PROJECTS PAGE*/
+
+#projects{
+    
+    grid-area: projectPrev;
+    width:100vw;
+    background-color: #000000;
+    color:rgb(255, 255, 255);
+    height: 100vh;
+    
+
+}
+
+#projectstext{
+
+    width:100%;
+}
+
+
+.projectsec {
+    
+    display:grid;
+    width:100%;
+    justify-items: center;
+   
+    grid-template-areas:
+    'project1 project2 project3'
+    
+    
+    
+
+}
+
+.project-tile{
+    width:100%;
+
+    margin: 10px -5px;
+    height: 33vh;
+    width: 25vw;
+    
+    
+}
+.project-tile img{
+    border-radius: 5%;
+    height: 33vh;
+    width: 25vw;
+    
+}
+
+.project-tile h1{
+
+    
+}
+
+.project-tile p{
+
+    
+}
+
+
+
+.resume{
+    grid-area:resumeplug;
+    display: inline;
+
+    text-align: center;
+    font-size: 1.5rem;
+    
+
+    
+    
+}
+
+
+#RightButton{
+    border-color: #3401a9;
+    color:rgb(253, 253, 253);
+    background-color:rgb(29, 28, 28) ;
+    width:1em;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5%;
+    
+    
+
+
+}
+#RightButton:hover{
+    color:rgb(255, 255, 255);
+    background-color: #3401a9 ;
+    border-color: #3401a9;
+    transition: 0.4s;
+    text-decoration: dashed;
+    text-decoration-thickness: 10px;
+    text-decoration-color: #ff1361;
+    padding: 10px;
+
+      
+}
+
+
+
+#LeftButton{
+    color:rgb(253, 253, 253);
+    background-color:rgb(29, 28, 28) ;
+    border-color: #ff00ff;
+    width:1em;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5%;
+    
+
+
+}
+#LeftButton:hover{
+    color:rgb(255, 255, 255);
+    background-color: #ff00ff;
+    border-color: #ff00ff;
+    transition: 0.4s;
+    padding: 10px;
+    
+} 
+
+
+@media (max-width:960px){
+    #animateo{
+        font-size: 60px;
+    }
+    .contents{
+        margin-top: 100px;
+        
+    }
+    .resume{
+        margin-top: -150px;
+    }
+    #menuli li{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size:1rem;
+    
+    }
+    .menuMan{
+    
+    }
+    .project-tile img{
+        height: 20vh;
+        
+        
+        
+    }
+
+    .resume{
+        margin-top: -5vh;
+    }
+
+    .project-tile{
+        font-size:2vw;
+    }
+
+}
+
+
+
+@media (max-width:700px){
+    .contents{
+        margin-top: 0px;
+        margin-bottom:-100px;
+    
+        
+    }
+    #projects{
+        
+    }
+
+}
+
+@media (max-width:600px){
+
+    .project-tile{
+        font-size:12px;
+    }
+
+}
+
